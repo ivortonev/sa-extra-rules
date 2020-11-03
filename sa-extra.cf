@@ -1,9 +1,8 @@
-# VERSAO: 2020-11-03-02
+# VERSAO: 2020-11-03-03
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
-
 body            BLOG_WEEBLY     /weebly\.com/
-describe        BLOG_WEEBLY     Free blog site
+describe        BLOG_WEEBLY     WEEBLY Free blog site
 score           BLOG_WEEBLY     9 9 9 9
 
 body            __WEBMAIL_SCAM_ATUALIZANDO      /atualizando/i
@@ -62,6 +61,10 @@ body            __WEBMAIL_SCAM_GROUP            /group/i
 body            __WEBMAIL_SCAM_RELIEF           /relief/i
 body            __WEBMAIL_SCAM_FUND             /fund/i
 body            __WEBMAIL_SCAM_SELECTED         /selected/i
+body			__WEBMAIL_SCAM_SISTEMA			/sistema/i
+body			__WEBMAIL_SCAM_WEBMAIL			/webmail/i
+body			__WEBMAIL_SCAM_LOGIN			/login/i
+body			__WEBMAIL_SCAM_EVITAR			/evitar/i
 
 meta            SCAM_01 ( __WEBMAIL_SCAM_ATUALIZANDO && __WEBMAIL_SCAM_ATUALIZE && __WEBMAIL_SCAM_SUA && __WEBMAIL_SCAM_CONTA )
 describe        SCAM_01 ATUALIZANDO / ATUALIZE / SUA / CONTA
@@ -114,3 +117,7 @@ score           SCAM_12 9 9 9 9
 meta            SCAM_13 ( __WEBMAIL_SCAM_WORLD && __WEBMAIL_SCAM_BANK && __WEBMAIL_SCAM_GROUP && __WEBMAIL_SCAM_RELIEF && __WEBMAIL_SCAM_FUND && __WEBMAIL_SCAM_SELECTED )
 describe        SCAM_13 WORLD / BANK / GROUP / RELIEF / FUND / SELECTED
 score           SCAM_13 9 9 9 9
+
+meta            SCAM_14 ( __WEBMAIL_SCAM_SISTEMA && __WEBMAIL_SCAM_WEBMAIL && __WEBMAIL_SCAM_EVITAR && __WEBMAIL_SCAM_CLIQUE && __WEBMAIL_SCAM_AQUI && __WEBMAIL_SCAM_LOGIN )
+describe        SCAM_14 SISTEMA / WEBMAIL / EVITAR / CLIQUE / AQUI / LOGIN
+score           SCAM_14 9 9 9 9
