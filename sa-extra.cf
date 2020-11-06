@@ -5,69 +5,70 @@ body            BLOG_WEEBLY     /weebly\.com/
 describe        BLOG_WEEBLY     WEEBLY Free blog site
 score           BLOG_WEEBLY     9 9 9 9
 
-body            __WEBMAIL_SCAM_ATUALIZANDO      /atualizando/i
-body            __WEBMAIL_SCAM_ATUALIZE         /atualize/i
-body            __WEBMAIL_SCAM_ATUALIZAR        /atualizar/i
-body            __WEBMAIL_SCAM_SUA              /sua/i
+body            __WEBMAIL_SCAM_ACESSO           /acesso/i
 body            __WEBMAIL_SCAM_AQUI             /aqui/i
-body            __WEBMAIL_SCAM_CONTA            /conta/i
-body            __WEBMAIL_SCAM_CLIQUE           /clique/i
-body            __WEBMAIL_SCAM_CLICANDO         /clicando/i
-body            __WEBMAIL_SCAM_INATIVA          /inativa/i
-body            __WEBMAIL_SCAM_BLOQUEADA        /bloqueada/i
+body            __WEBMAIL_SCAM_ARMAZENAMENTO    /armazenamento/i
 body            __WEBMAIL_SCAM_ATIVAR           /ativar/i
-body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
+body            __WEBMAIL_SCAM_ATUALIZANDO      /atualizando/i
+body            __WEBMAIL_SCAM_ATUALIZAR        /atualizar/i
+body            __WEBMAIL_SCAM_ATUALIZE         /atualize/i
+body            __WEBMAIL_SCAM_BANK             /bank/i
+body            __WEBMAIL_SCAM_BLOQUEADA        /bloqueada/i
 body            __WEBMAIL_SCAM_BLOQUEADO        /bloqueado/i
-body            __WEBMAIL_SCAM_PHILANTHROPIST   /philanthropist/i
 body            __WEBMAIL_SCAM_CHAIRMAN         /chairman/i
 body            __WEBMAIL_SCAM_CHARITY          /charity/i
-body            __WEBMAIL_SCAM_DONATE           /donate/i
-body            __WEBMAIL_SCAM_INTERESTED       /interested/i
-body            __WEBMAIL_SCAM_DONATION         /donation/i
-body            __WEBMAIL_SCAM_ARMAZENAMENTO    /armazenamento/i
-body            __WEBMAIL_SCAM_CORREIO          /correio/i
-body            __WEBMAIL_SCAM_LIMITE           /limite/i
-body            __WEBMAIL_SCAM_SENHA            /senha/i
-body            __WEBMAIL_SCAM_EXPIRA           /expira/i
-body            __WEBMAIL_SCAM_IMEDIATAMENTE    /imediatamente/i
-body            __WEBMAIL_SCAM_EMAIL            /email/i
-body            __WEBMAIL_SCAM_MAILBOX          /mailbox/i
-body            __WEBMAIL_SCAM_STORAGE          /storage/i
-body            __WEBMAIL_SCAM_LIMIT            /limit/i
+body            __WEBMAIL_SCAM_CLICANDO         /clicando/i
 body            __WEBMAIL_SCAM_CLICK            /click/i
-body            __WEBMAIL_SCAM_INFORM           /inform/i
+body            __WEBMAIL_SCAM_CLIQUE           /clique/i
+body            __WEBMAIL_SCAM_CONFIRME         /confirme/i
+body            __WEBMAIL_SCAM_CONTA            /conta/i
+body            __WEBMAIL_SCAM_CONTA            /conta/i
+body            __WEBMAIL_SCAM_CORREIO          /correio/i
 body            __WEBMAIL_SCAM_DELIVERED        /delivered/i
-body            __WEBMAIL_SCAM_RECIPIENTS       /recipients/i
-body            __WEBMAIL_SCAM_RETURNED         /returned/i
+body            __WEBMAIL_SCAM_DENIED           /denied/i
+body            __WEBMAIL_SCAM_DIREITOS         /direitos/i
+body            __WEBMAIL_SCAM_DONATE           /donate/i
+body            __WEBMAIL_SCAM_DONATION         /donation/i
+body            __WEBMAIL_SCAM_EMAIL            /email/i
+body            __WEBMAIL_SCAM_EVITAR           /evitar/i
+body            __WEBMAIL_SCAM_EXCEDEU          /excedeu/i
+body            __WEBMAIL_SCAM_EXPIRA           /expira/i
+body            __WEBMAIL_SCAM_FOLLOWING        /following/i
+body            __WEBMAIL_SCAM_FUND             /fund/i
+body            __WEBMAIL_SCAM_GROUP            /group/i
+body            __WEBMAIL_SCAM_IMEDIATAMENTE    /imediatamente/i
+body            __WEBMAIL_SCAM_INATIVA          /inativa/i
+body            __WEBMAIL_SCAM_INFORM           /inform/i
+body            __WEBMAIL_SCAM_INTERESTED       /interested/i
+body            __WEBMAIL_SCAM_LIMITE           /limite/i
+body            __WEBMAIL_SCAM_LIMIT            /limit/i
+body            __WEBMAIL_SCAM_LOGIN            /login/i
+body            __WEBMAIL_SCAM_MAILBOX          /mailbox/i
 body            __WEBMAIL_SCAM_MESSAGE          /message/i
 body            __WEBMAIL_SCAM_MISSPELLED       /misspelled/i
-body            __WEBMAIL_SCAM_FOLLOWING        /following/i
+body            __WEBMAIL_SCAM_OBRIGADO         /obrigado/i
+body            __WEBMAIL_SCAM_OBRIGADOS        /obrigados/i
 body            __WEBMAIL_SCAM_PASSWORD         /password/i
-body            __WEBMAIL_SCAM_REQUIRED         /required/i
-body            __WEBMAIL_SCAM_DENIED           /denied/i
-body            __WEBMAIL_SCAM_EVITAR           /evitar/i
+body            __WEBMAIL_SCAM_PHILANTHROPIST   /philanthropist/i
+body            __WEBMAIL_SCAM_RECEBER          /receber/i
+body            __WEBMAIL_SCAM_RECIPIENTS       /recipients/i
 body            __WEBMAIL_SCAM_RECONFIRME       /reconfirme/i
-body            __WEBMAIL_SCAM_CONFIRME         /confirme/i
-body            __WEBMAIL_SCAM_WEBMAILADMIN1    /webmailadmin/i
-body            __WEBMAIL_SCAM_WEBMAILADMIN2    /webmail\ admin/i
+body            __WEBMAIL_SCAM_RELIEF           /relief/i
+body            __WEBMAIL_SCAM_REQUIRED         /required/i
+body            __WEBMAIL_SCAM_RETURNED         /returned/i
+body            __WEBMAIL_SCAM_SELECTED         /selected/i
+body            __WEBMAIL_SCAM_SENHA            /senha/i
+body            __WEBMAIL_SCAM_SISTEMA          /sistema/i
+body            __WEBMAIL_SCAM_STORAGE          /storage/i
+body            __WEBMAIL_SCAM_SUA              /sua/i
 body            __WEBMAIL_SCAM_SUPORTEADMIN1    /suporteadmin/i
 body            __WEBMAIL_SCAM_SUPORTEADMIN2    /suporte\ admin/i
-body            __WEBMAIL_SCAM_DIREITOS         /direitos/i
-body            __WEBMAIL_SCAM_EXCEDEU          /excedeu/i
-body            __WEBMAIL_SCAM_RECEBER          /receber/i
+body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
+body            __WEBMAIL_SCAM_WEBMAILADMIN1    /webmailadmin/i
+body            __WEBMAIL_SCAM_WEBMAILADMIN2    /webmail\ admin/i
+body            __WEBMAIL_SCAM_WEBMAIL          /webmail/i
 body            __WEBMAIL_SCAM_WORLD            /world/i
-body            __WEBMAIL_SCAM_BANK             /bank/i
-body            __WEBMAIL_SCAM_GROUP            /group/i
-body            __WEBMAIL_SCAM_RELIEF           /relief/i
-body            __WEBMAIL_SCAM_FUND             /fund/i
-body            __WEBMAIL_SCAM_SELECTED         /selected/i
-body						__WEBMAIL_SCAM_SISTEMA					/sistema/i
-body						__WEBMAIL_SCAM_WEBMAIL					/webmail/i
-body						__WEBMAIL_SCAM_LOGIN						/login/i
-body						__WEBMAIL_SCAM_CONTA						/conta/i
-body						__WEBMAIL_SCAM_ACESSO						/acesso/i
-body						__WEBMAIL_SCAM_OBRIGADO					/obrigado/i
-body						__WEBMAIL_SCAM_OBRIGADOS				/obrigados/i
+
 
 meta            SCAM_01 ( __WEBMAIL_SCAM_ATUALIZANDO && __WEBMAIL_SCAM_ATUALIZE && __WEBMAIL_SCAM_SUA && __WEBMAIL_SCAM_CONTA )
 describe        SCAM_01 ATUALIZANDO / ATUALIZE / SUA / CONTA
@@ -128,4 +129,3 @@ score           SCAM_14 9 9 9 9
 meta            SCAM_15 ( __WEBMAIL_SCAM_WEBMAIL && ( __WEBMAIL_SCAM_OBRIGADO || __WEBMAIL_SCAM_OBRIGADOS ) && __WEBMAIL_SCAM_EVITAR && __WEBMAIL_SCAM_CONTA && __WEBMAIL_SCAM_CLIQUE )
 describe        SCAM_15 WEBMAIL / (OBRIGADO|OBRIGADOS) / EVITAR / CONTA / CLIQUE
 score           SCAM_15 9 9 9 9
-
