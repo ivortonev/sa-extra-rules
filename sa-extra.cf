@@ -1,4 +1,4 @@
-# VERSAO: 2020-11-06-01
+# VERSAO: 2020-11-09-11-42
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
@@ -36,6 +36,8 @@ body            __WEBMAIL_SCAM_EXPIRA           /expira/i
 body            __WEBMAIL_SCAM_FOLLOWING        /following/i
 body            __WEBMAIL_SCAM_FUND             /fund/i
 body            __WEBMAIL_SCAM_GROUP            /group/i
+body            __WEBMAIL_SCAM_HELPDESK1        /help\ desk/i
+body            __WEBMAIL_SCAM_HELPDESK2        /helpdesk/i
 body            __WEBMAIL_SCAM_IMEDIATAMENTE    /imediatamente/i
 body            __WEBMAIL_SCAM_INATIVA          /inativa/i
 body            __WEBMAIL_SCAM_INFORM           /inform/i
@@ -61,6 +63,7 @@ body            __WEBMAIL_SCAM_SENHA            /senha/i
 body            __WEBMAIL_SCAM_SISTEMA          /sistema/i
 body            __WEBMAIL_SCAM_STORAGE          /storage/i
 body            __WEBMAIL_SCAM_SUA              /sua/i
+body            __WEBMAIL_SCAM_SUSPENSO         /suspenso/i
 body            __WEBMAIL_SCAM_SUPORTEADMIN1    /suporteadmin/i
 body            __WEBMAIL_SCAM_SUPORTEADMIN2    /suporte\ admin/i
 body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
@@ -129,3 +132,7 @@ score           SCAM_14 9 9 9 9
 meta            SCAM_15 ( __WEBMAIL_SCAM_WEBMAIL && ( __WEBMAIL_SCAM_OBRIGADO || __WEBMAIL_SCAM_OBRIGADOS ) && __WEBMAIL_SCAM_EVITAR && __WEBMAIL_SCAM_CONTA && __WEBMAIL_SCAM_CLIQUE )
 describe        SCAM_15 WEBMAIL / (OBRIGADO|OBRIGADOS) / EVITAR / CONTA / CLIQUE
 score           SCAM_15 9 9 9 9
+
+meta            SCAM_16 ( __WEBMAIL_SCAM_WEBMAIL && ( __WEBMAIL_SCAM_HELPDESK1 || __WEBMAIL_SCAM_HELPDESK2 ) && __WEBMAIL_SCAM_SUSPENSO && __WEBMAIL_SCAM_CLIQUE && __WEBMAIL_SCAM_AQUI )
+describe        SCAM_16 WEBMAIL / (HELPDESK1|HELPDESK2) / SUSPENSO / CLIQUE / AQUI
+score           SCAM_16 9 9 9 9
