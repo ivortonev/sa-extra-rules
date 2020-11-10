@@ -1,13 +1,16 @@
-# VERSAO: 2020-11-09-11-42
+# VERSAO: 2020-11-10-11-10
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
 describe        BLOG_WEEBLY     WEEBLY Free blog site
 score           BLOG_WEEBLY     9 9 9 9
 
+body            __WEBMAIL_SCAM_ACESSE           /acesse/i
 body            __WEBMAIL_SCAM_ACESSO           /acesso/i
+body            __WEBMAIL_SCAM_ADMINISTRADOR	  /administrador/i
 body            __WEBMAIL_SCAM_AQUI             /aqui/i
 body            __WEBMAIL_SCAM_ARMAZENAMENTO    /armazenamento/i
+body            __WEBMAIL_SCAM_ATINGIU          /atingiu/i
 body            __WEBMAIL_SCAM_ATIVAR           /ativar/i
 body            __WEBMAIL_SCAM_ATUALIZANDO      /atualizando/i
 body            __WEBMAIL_SCAM_ATUALIZAR        /atualizar/i
@@ -15,6 +18,7 @@ body            __WEBMAIL_SCAM_ATUALIZE         /atualize/i
 body            __WEBMAIL_SCAM_BANK             /bank/i
 body            __WEBMAIL_SCAM_BLOQUEADA        /bloqueada/i
 body            __WEBMAIL_SCAM_BLOQUEADO        /bloqueado/i
+body            __WEBMAIL_SCAM_CAIXA            /caixa/i
 body            __WEBMAIL_SCAM_CHAIRMAN         /chairman/i
 body            __WEBMAIL_SCAM_CHARITY          /charity/i
 body            __WEBMAIL_SCAM_CLICANDO         /clicando/i
@@ -23,6 +27,7 @@ body            __WEBMAIL_SCAM_CLIQUE           /clique/i
 body            __WEBMAIL_SCAM_CONFIRME         /confirme/i
 body            __WEBMAIL_SCAM_CONTA            /conta/i
 body            __WEBMAIL_SCAM_CONTA            /conta/i
+body            __WEBMAIL_SCAM_COTA             /cota/i
 body            __WEBMAIL_SCAM_CORREIO          /correio/i
 body            __WEBMAIL_SCAM_DELIVERED        /delivered/i
 body            __WEBMAIL_SCAM_DENIED           /denied/i
@@ -31,6 +36,7 @@ body            __WEBMAIL_SCAM_DONATE           /donate/i
 body            __WEBMAIL_SCAM_DONATION         /donation/i
 body            __WEBMAIL_SCAM_EMAIL            /email/i
 body            __WEBMAIL_SCAM_EVITAR           /evitar/i
+body            __WEBMAIL_SCAM_ENVIAR           /enviar/i
 body            __WEBMAIL_SCAM_EXCEDEU          /excedeu/i
 body            __WEBMAIL_SCAM_EXPIRA           /expira/i
 body            __WEBMAIL_SCAM_FOLLOWING        /following/i
@@ -67,6 +73,8 @@ body            __WEBMAIL_SCAM_SUSPENSO         /suspenso/i
 body            __WEBMAIL_SCAM_SUPORTEADMIN1    /suporteadmin/i
 body            __WEBMAIL_SCAM_SUPORTEADMIN2    /suporte\ admin/i
 body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
+body            __WEBMAIL_SCAM_TAMANHO          /tamanho/i
+body            __WEBMAIL_SCAM_ULTRAPASSOU      /ultrapassou/i
 body            __WEBMAIL_SCAM_WEBMAILADMIN1    /webmailadmin/i
 body            __WEBMAIL_SCAM_WEBMAILADMIN2    /webmail\ admin/i
 body            __WEBMAIL_SCAM_WEBMAIL          /webmail/i
@@ -136,3 +144,11 @@ score           SCAM_15 9 9 9 9
 meta            SCAM_16 ( __WEBMAIL_SCAM_WEBMAIL && ( __WEBMAIL_SCAM_HELPDESK1 || __WEBMAIL_SCAM_HELPDESK2 ) && __WEBMAIL_SCAM_SUSPENSO && __WEBMAIL_SCAM_CLIQUE && __WEBMAIL_SCAM_AQUI )
 describe        SCAM_16 WEBMAIL / (HELPDESK1|HELPDESK2) / SUSPENSO / CLIQUE / AQUI
 score           SCAM_16 9 9 9 9
+
+meta            SCAM_17 ( __WEBMAIL_SCAM_WEBMAIL && __WEBMAIL_SCAM_ADMINISTRADOR && __WEBMAIL_SCAM_ATUALIZE && __WEBMAIL_SCAM_AQUI && ( __WEBMAIL_SCAM_HELPDESK1 || __WEBMAIL_SCAM_HELPDESK2 ) )
+describe        SCAM_17 WEBMAIL / ADMINISTRADOR / ATUALIZE / AQUI / (HELPDESK1|HELPDESK2) 
+score           SCAM_17 9 9 9 9
+
+meta            SCAM_18 ( __WEBMAIL_SCAM_TAMANHO || __WEBMAIL_SCAM_COTA ) && __WEBMAIL_SCAM_CAIXA && ( __WEBMAIL_SCAM_ATINGIU || __WEBMAIL_SCAM_ULTRAPASSOU ) && ( __WEBMAIL_SCAM_ENVIAR || __WEBMAIL_SCAM_RECEBER ) && ( __WEBMAIL_SCAM_CLIQUE || __WEBMAIL_SCAM_ACESSE )
+describe        SCAM_18 (TAMANHO|COTA) / CAIXA / (ATINGIU|ULTRAPASSOU) / (ENVIAR|RECEBER / (CLIQUE|ACESSE) 
+score           SCAM_18 9 9 9 9
