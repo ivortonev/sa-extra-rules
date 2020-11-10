@@ -14,7 +14,7 @@ score           SHORTENER_VIRALURL              9 9 9 9
 
 body            __WEBMAIL_SCAM_ACESSE           /acesse/i
 body            __WEBMAIL_SCAM_ACESSO           /acesso/i
-body			      __WEBMAIL_SCAM_ADMINISTRADOR	  /administrador/i
+body            __WEBMAIL_SCAM_ADMINISTRADOR	  /administrador/i
 body            __WEBMAIL_SCAM_AQUI             /aqui/i
 body            __WEBMAIL_SCAM_ARMAZENAMENTO    /armazenamento/i
 body            __WEBMAIL_SCAM_ATINGIU          /atingiu/i
