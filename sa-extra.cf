@@ -1,13 +1,20 @@
-# VERSAO: 2020-11-10-11-10
+# VERSAO: 2020-11-10-11-15
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
 describe        BLOG_WEEBLY     WEEBLY Free blog site
 score           BLOG_WEEBLY     9 9 9 9
 
+body            __SHORTENER_VIRALURL1           /virl\.ws/i
+body            __SHORTENER_VIRALURL2           /viralurl\.com/i
+meta            SHORTENER_VIRALURL              ( __SHORTENER_VIRALURL1 ||  __SHORTENER_VIRALURL2 )
+describe        SHORTENER_VIRALURL              Shortener ViralURL
+score           SHORTENER_VIRALURL              9 9 9 9
+
+
 body            __WEBMAIL_SCAM_ACESSE           /acesse/i
 body            __WEBMAIL_SCAM_ACESSO           /acesso/i
-body            __WEBMAIL_SCAM_ADMINISTRADOR	  /administrador/i
+body			      __WEBMAIL_SCAM_ADMINISTRADOR	  /administrador/i
 body            __WEBMAIL_SCAM_AQUI             /aqui/i
 body            __WEBMAIL_SCAM_ARMAZENAMENTO    /armazenamento/i
 body            __WEBMAIL_SCAM_ATINGIU          /atingiu/i
