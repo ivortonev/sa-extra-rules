@@ -1,4 +1,4 @@
-# VERSAO: 2020-11-10-11-15
+# VERSAO: 2020-11-20-13-06
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
@@ -33,11 +33,13 @@ body            __WEBMAIL_SCAM_CLICK            /click/i
 body            __WEBMAIL_SCAM_CLIQUE           /clique/i
 body            __WEBMAIL_SCAM_CONFIRME         /confirme/i
 body            __WEBMAIL_SCAM_CONTA            /conta/i
-body            __WEBMAIL_SCAM_CONTA            /conta/i
+body            __WEBMAIL_SCAM_CONTAS           /contas/i
 body            __WEBMAIL_SCAM_COTA             /cota/i
 body            __WEBMAIL_SCAM_CORREIO          /correio/i
 body            __WEBMAIL_SCAM_DELIVERED        /delivered/i
 body            __WEBMAIL_SCAM_DENIED           /denied/i
+body            __WEBMAIL_SCAM_DESABILITAR      /desabilitar/i
+body            __WEBMAIL_SCAM_DESATIVAR        /desativar/i
 body            __WEBMAIL_SCAM_DIREITOS         /direitos/i
 body            __WEBMAIL_SCAM_DONATE           /donate/i
 body            __WEBMAIL_SCAM_DONATION         /donation/i
@@ -53,6 +55,7 @@ body            __WEBMAIL_SCAM_HELPDESK1        /help\ desk/i
 body            __WEBMAIL_SCAM_HELPDESK2        /helpdesk/i
 body            __WEBMAIL_SCAM_IMEDIATAMENTE    /imediatamente/i
 body            __WEBMAIL_SCAM_INATIVA          /inativa/i
+body            __WEBMAIL_SCAM_INATIVAS         /inativas/i
 body            __WEBMAIL_SCAM_INFORM           /inform/i
 body            __WEBMAIL_SCAM_INTERESTED       /interested/i
 body            __WEBMAIL_SCAM_LIMITE           /limite/i
@@ -156,6 +159,10 @@ meta            SCAM_17 ( __WEBMAIL_SCAM_WEBMAIL && __WEBMAIL_SCAM_ADMINISTRADOR
 describe        SCAM_17 WEBMAIL / ADMINISTRADOR / ATUALIZE / AQUI / (HELPDESK1|HELPDESK2) 
 score           SCAM_17 9 9 9 9
 
-meta            SCAM_18 ( __WEBMAIL_SCAM_TAMANHO || __WEBMAIL_SCAM_COTA ) && __WEBMAIL_SCAM_CAIXA && ( __WEBMAIL_SCAM_ATINGIU || __WEBMAIL_SCAM_ULTRAPASSOU ) && ( __WEBMAIL_SCAM_ENVIAR || __WEBMAIL_SCAM_RECEBER ) && ( __WEBMAIL_SCAM_CLIQUE || __WEBMAIL_SCAM_ACESSE )
+meta            SCAM_18 ( ( __WEBMAIL_SCAM_TAMANHO || __WEBMAIL_SCAM_COTA ) && __WEBMAIL_SCAM_CAIXA && ( __WEBMAIL_SCAM_ATINGIU || __WEBMAIL_SCAM_ULTRAPASSOU ) && ( __WEBMAIL_SCAM_ENVIAR || __WEBMAIL_SCAM_RECEBER ) && ( __WEBMAIL_SCAM_CLIQUE || __WEBMAIL_SCAM_ACESSE ) )
 describe        SCAM_18 (TAMANHO|COTA) / CAIXA / (ATINGIU|ULTRAPASSOU) / (ENVIAR|RECEBER / (CLIQUE|ACESSE) 
 score           SCAM_18 9 9 9 9
+
+meta            SCAM_19 ( ( __WEBMAIL_SCAM_DESATIVAR || __WEBMAIL_SCAM_DESABILITAR ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CONTAS ) && ( __WEBMAIL_SCAM_INATIVA || __WEBMAIL_SCAM_INATIVAS ) && __WEBMAIL_SCAM_LOGIN ) 
+describe        SCAM_19 (DESATIVAR|DESABILITAR) / (CONTA|CONTAS) / (INATIVA|INATIVAS) / LOGIN
+score           SCAM_19 9 9 9 9
