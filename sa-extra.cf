@@ -1,4 +1,4 @@
-# VERSAO: 2020-11-20-13-06
+# VERSAO: 2020-11-24-15-16
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
@@ -74,6 +74,8 @@ body            __WEBMAIL_SCAM_RECONFIRME       /reconfirme/i
 body            __WEBMAIL_SCAM_RELIEF           /relief/i
 body            __WEBMAIL_SCAM_REQUIRED         /required/i
 body            __WEBMAIL_SCAM_RETURNED         /returned/i
+body            __WEBMAIL_SCAM_REVALIDAR        /revalidar/i
+body            __WEBMAIL_SCAM_REVALIDE         /revalide/i
 body            __WEBMAIL_SCAM_SELECTED         /selected/i
 body            __WEBMAIL_SCAM_SENHA            /senha/i
 body            __WEBMAIL_SCAM_SISTEMA          /sistema/i
@@ -166,3 +168,7 @@ score           SCAM_18 9 9 9 9
 meta            SCAM_19 ( ( __WEBMAIL_SCAM_DESATIVAR || __WEBMAIL_SCAM_DESABILITAR ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CONTAS ) && ( __WEBMAIL_SCAM_INATIVA || __WEBMAIL_SCAM_INATIVAS ) && __WEBMAIL_SCAM_LOGIN ) 
 describe        SCAM_19 (DESATIVAR|DESABILITAR) / (CONTA|CONTAS) / (INATIVA|INATIVAS) / LOGIN
 score           SCAM_19 9 9 9 9
+
+meta            SCAM_20 ( __WEBMAIL_SCAM_CONTA && __WEBMAIL_SCAM_LIMITE && ( __WEBMAIL_SCAM_COTA || __WEBMAIL_SCAM_ARMAZENAMENTO ) && __WEBMAIL_SCAM_EVITAR && ( __WEBMAIL_SCAM_REVALIDAR || __WEBMAIL_SCAM_REVALIDE ) && __WEBMAIL_SCAM_CLIQUE )
+describe        SCAM_20 CONTA / LIMITE / (COTA|ARMAZENAMENTO) / EVITAR / (REVALIDAR/REVALIDE) / CLIQUE
+score           SCAM_20 9 9 9 9
