@@ -3,5 +3,5 @@ SpamAssassin extra SCAM/SPAM rules
 
 
 INSTALL:
- - Extract to spamassassin rules/configuration folder
+ - Copy .cf file to spamassassin rules/configuration folder
  - Restart filter process
