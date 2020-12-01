@@ -1,4 +1,4 @@
-# VERSAO: 2020-11-27-14-13
+# VERSAO: 2020-12-01-14-55
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
@@ -39,11 +39,14 @@ body            __WEBMAIL_SCAM_CORREIO          /correio/i
 body            __WEBMAIL_SCAM_DELIVERED        /delivered/i
 body            __WEBMAIL_SCAM_DENIED           /denied/i
 body            __WEBMAIL_SCAM_DESABILITAR      /desabilitar/i
+body            __WEBMAIL_SCAM_DESATIVADA       /desativada/i
 body            __WEBMAIL_SCAM_DESATIVAR        /desativar/i
 body            __WEBMAIL_SCAM_DIREITOS         /direitos/i
 body            __WEBMAIL_SCAM_DONATE           /donate/i
 body            __WEBMAIL_SCAM_DONATION         /donation/i
 body            __WEBMAIL_SCAM_EMAIL            /email/i
+body            __WEBMAIL_SCAM_ENCERRADA        /encerrada/i
+body            __WEBMAIL_SCAM_ENCERRADO        /encerrado/i
 body            __WEBMAIL_SCAM_EVITAR           /evitar/i
 body            __WEBMAIL_SCAM_ENVIAR           /enviar/i
 body            __WEBMAIL_SCAM_EXCEDEU          /excedeu/i
@@ -55,6 +58,8 @@ body            __WEBMAIL_SCAM_HELPDESK1        /help\ desk/i
 body            __WEBMAIL_SCAM_HELPDESK2        /helpdesk/i
 body            __WEBMAIL_SCAM_IMEDIATAMENTE    /imediatamente/i
 body            __WEBMAIL_SCAM_INATIVA          /inativa/i
+body            __WEBMAIL_SCAM_INATIVADA        /inativada/i
+body            __WEBMAIL_SCAM_INATIVADO        /inativado/i
 body            __WEBMAIL_SCAM_INATIVAS         /inativas/i
 body            __WEBMAIL_SCAM_INFORM           /inform/i
 body            __WEBMAIL_SCAM_INTERESTED       /interested/i
@@ -81,6 +86,7 @@ body            __WEBMAIL_SCAM_SENHA            /senha/i
 body            __WEBMAIL_SCAM_SISTEMA          /sistema/i
 body            __WEBMAIL_SCAM_STORAGE          /storage/i
 body            __WEBMAIL_SCAM_SUA              /sua/i
+body            __WEBMAIL_SCAM_SUSPENSA         /suspensa/i
 body            __WEBMAIL_SCAM_SUSPENSO         /suspenso/i
 body            __WEBMAIL_SCAM_SUPORTEADMIN1    /suporteadmin/i
 body            __WEBMAIL_SCAM_SUPORTEADMIN2    /suporte\ admin/i
@@ -172,3 +178,7 @@ score           SCAM_19 9 9 9 9
 meta            SCAM_20 ( __WEBMAIL_SCAM_CONTA && __WEBMAIL_SCAM_LIMITE && ( __WEBMAIL_SCAM_COTA || __WEBMAIL_SCAM_ARMAZENAMENTO ) && ( __WEBMAIL_SCAM_EVITAR || __WEBMAIL_SCAM_ENVIAR || __WEBMAIL_SCAM_RECEBER ) && ( __WEBMAIL_SCAM_REVALIDAR || __WEBMAIL_SCAM_REVALIDE ) && __WEBMAIL_SCAM_CLIQUE )
 describe        SCAM_20 CONTA / LIMITE / (COTA|ARMAZENAMENTO) / (EVITAR|ENVIAR|RECEBER) / (REVALIDAR/REVALIDE) / CLIQUE
 score           SCAM_20 9 9 9 9
+
+meta            SCAM_21 ( ( __WEBMAIL_SCAM_EMAIL || __WEBMAIL_SCAM_WEBMAIL ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CAIXA ) && ( __WEBMAIL_SCAM_CLIQUE || __WEBMAIL_SCAM_ACESSE ) &&  __WEBMAIL_SCAM_AQUI && ( __WEBMAIL_SCAM_ENCERRADA || __WEBMAIL_SCAM_ENCERRADO || __WEBMAIL_SCAM_BLOQUEADA || __WEBMAIL_SCAM_BLOQUEADO || __WEBMAIL_SCAM_INATIVADA || __WEBMAIL_SCAM_INATIVADO || __WEBMAIL_SCAM_SUSPENSA || __WEBMAIL_SCAM_SUSPENSO ) )
+describe        SCAM_21 (EMAIL|WEBMAIL)/(CONTA|CAIXA)/(CLIQUE|ACESSE)/AQUI/(ENCERRADA|ENCERRADO|BLOQUEADA|BLOQUEADO|INATIVADA|INATIVADO|SUSPENSA|SUSPENSO)
+score           SCAM_21 9 9 9 9
