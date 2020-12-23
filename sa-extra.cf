@@ -1,4 +1,4 @@
-# VERSAO: 2020-12-01-14-55
+# VERSAO: 2020-12-23-14-55
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
@@ -66,6 +66,7 @@ body            __WEBMAIL_SCAM_INTERESTED       /interested/i
 body            __WEBMAIL_SCAM_LIMITE           /limite/i
 body            __WEBMAIL_SCAM_LIMIT            /limit/i
 body            __WEBMAIL_SCAM_LOGIN            /login/i
+body            __WEBMAIL_SCAM_MAIL             /mail/i
 body            __WEBMAIL_SCAM_MAILBOX          /mailbox/i
 body            __WEBMAIL_SCAM_MESSAGE          /message/i
 body            __WEBMAIL_SCAM_MISSPELLED       /misspelled/i
@@ -73,6 +74,8 @@ body            __WEBMAIL_SCAM_OBRIGADO         /obrigado/i
 body            __WEBMAIL_SCAM_OBRIGADOS        /obrigados/i
 body            __WEBMAIL_SCAM_PASSWORD         /password/i
 body            __WEBMAIL_SCAM_PHILANTHROPIST   /philanthropist/i
+body            __WEBMAIL_SCAM_PROTEJA          /proteja/i
+body            __WEBMAIL_SCAM_PROTEGER         /proteger/i
 body            __WEBMAIL_SCAM_RECEBER          /receber/i
 body            __WEBMAIL_SCAM_RECIPIENTS       /recipients/i
 body            __WEBMAIL_SCAM_RECONFIRME       /reconfirme/i
@@ -93,6 +96,7 @@ body            __WEBMAIL_SCAM_SUPORTEADMIN2    /suporte\ admin/i
 body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
 body            __WEBMAIL_SCAM_TAMANHO          /tamanho/i
 body            __WEBMAIL_SCAM_ULTRAPASSOU      /ultrapassou/i
+body            __WEBMAIL_SCAM_VALIDE           /valide/i
 body            __WEBMAIL_SCAM_WEBMAILADMIN1    /webmailadmin/i
 body            __WEBMAIL_SCAM_WEBMAILADMIN2    /webmail\ admin/i
 body            __WEBMAIL_SCAM_WEBMAIL          /webmail/i
@@ -182,3 +186,8 @@ score           SCAM_20 9 9 9 9
 meta            SCAM_21 ( ( __WEBMAIL_SCAM_EMAIL || __WEBMAIL_SCAM_WEBMAIL ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CAIXA ) && ( __WEBMAIL_SCAM_CLIQUE || __WEBMAIL_SCAM_ACESSE ) &&  __WEBMAIL_SCAM_AQUI && ( __WEBMAIL_SCAM_ENCERRADA || __WEBMAIL_SCAM_ENCERRADO || __WEBMAIL_SCAM_BLOQUEADA || __WEBMAIL_SCAM_BLOQUEADO || __WEBMAIL_SCAM_INATIVADA || __WEBMAIL_SCAM_INATIVADO || __WEBMAIL_SCAM_SUSPENSA || __WEBMAIL_SCAM_SUSPENSO ) )
 describe        SCAM_21 (EMAIL|WEBMAIL)/(CONTA|CAIXA)/(CLIQUE|ACESSE)/AQUI/(ENCERRADA|ENCERRADO|BLOQUEADA|BLOQUEADO|INATIVADA|INATIVADO|SUSPENSA|SUSPENSO)
 score           SCAM_21 9 9 9 9
+
+meta            SCAM_22 ( __WEBMAIL_SCAM_LOGIN && __WEBMAIL_SCAM_CAIXA && ( __WEBMAIL_SCAM_CORREIO || __WEBMAIL_SCAM_MAIL || __WEBMAIL_SCAM_EMAIL ) && ( __WEBMAIL_SCAM_VALIDE || __WEBMAIL_SCAM_PROTEJA || __WEBMAIL_SCAM_PROTEGER ) && __WEBMAIL_SCAM_CLIQUE && __WEBMAIL_SCAM_AQUI )
+describe        SCAM_22 LOGIN / CAIXA / (CORREIO|MAIL|EMAIL) / (VALIDE/PROTEGER/PROTEJA) / CLIQUE / AQUI
+score           SCAM_22 9 9 9 9
+
