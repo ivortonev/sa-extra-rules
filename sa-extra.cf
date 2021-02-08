@@ -1,9 +1,14 @@
-# VERSAO: 2020-12-23-14-55
+# VERSAO: 2021-02-08-13-13
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
 describe        BLOG_WEEBLY     WEEBLY Free blog site
 score           BLOG_WEEBLY     9 9 9 9
+
+body            WEBHOSTAPP      /000webhostapp.com/
+describe        WEBHOSTAPP      WEBHOSTAPP Free blog site
+score           WEBHOSTAPP      9 9 9 9
+
 
 body            __SHORTENER_VIRALURL1           /virl\.ws/i
 body            __SHORTENER_VIRALURL2           /viralurl\.com/i
@@ -18,6 +23,7 @@ body            __WEBMAIL_SCAM_ADMINISTRADOR    /administrador/i
 body            __WEBMAIL_SCAM_AQUI             /aqui/i
 body            __WEBMAIL_SCAM_ARMAZENAMENTO    /armazenamento/i
 body            __WEBMAIL_SCAM_ATINGIU          /atingiu/i
+body            __WEBMAIL_SCAM_ATIVA            /ativa/i
 body            __WEBMAIL_SCAM_ATIVAR           /ativar/i
 body            __WEBMAIL_SCAM_ATUALIZANDO      /atualizando/i
 body            __WEBMAIL_SCAM_ATUALIZAR        /atualizar/i
@@ -41,12 +47,15 @@ body            __WEBMAIL_SCAM_DENIED           /denied/i
 body            __WEBMAIL_SCAM_DESABILITAR      /desabilitar/i
 body            __WEBMAIL_SCAM_DESATIVADA       /desativada/i
 body            __WEBMAIL_SCAM_DESATIVAR        /desativar/i
+body            __WEBMAIL_SCAM_DEVIDO           /devido/i
 body            __WEBMAIL_SCAM_DIREITOS         /direitos/i
 body            __WEBMAIL_SCAM_DONATE           /donate/i
 body            __WEBMAIL_SCAM_DONATION         /donation/i
 body            __WEBMAIL_SCAM_EMAIL            /email/i
 body            __WEBMAIL_SCAM_ENCERRADA        /encerrada/i
 body            __WEBMAIL_SCAM_ENCERRADO        /encerrado/i
+body            __WEBMAIL_SCAM_ENCERRAMENTO     /encerramento/i
+body            __WEBMAIL_SCAM_ENCERRAR         /encerrar/i
 body            __WEBMAIL_SCAM_EVITAR           /evitar/i
 body            __WEBMAIL_SCAM_ENVIAR           /enviar/i
 body            __WEBMAIL_SCAM_EXCEDEU          /excedeu/i
@@ -65,6 +74,7 @@ body            __WEBMAIL_SCAM_INFORM           /inform/i
 body            __WEBMAIL_SCAM_INTERESTED       /interested/i
 body            __WEBMAIL_SCAM_LIMITE           /limite/i
 body            __WEBMAIL_SCAM_LIMIT            /limit/i
+body            __WEBMAIL_SCAM_LINK             /link/i
 body            __WEBMAIL_SCAM_LOGIN            /login/i
 body            __WEBMAIL_SCAM_MAIL             /mail/i
 body            __WEBMAIL_SCAM_MAILBOX          /mailbox/i
@@ -97,6 +107,8 @@ body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
 body            __WEBMAIL_SCAM_TAMANHO          /tamanho/i
 body            __WEBMAIL_SCAM_ULTRAPASSOU      /ultrapassou/i
 body            __WEBMAIL_SCAM_VALIDE           /valide/i
+body            __WEBMAIL_SCAM_VERIFICAR        /verificar/i
+body            __WEBMAIL_SCAM_VERIFIQUE        /verifique/i
 body            __WEBMAIL_SCAM_WEBMAILADMIN1    /webmailadmin/i
 body            __WEBMAIL_SCAM_WEBMAILADMIN2    /webmail\ admin/i
 body            __WEBMAIL_SCAM_WEBMAIL          /webmail/i
@@ -191,3 +203,10 @@ meta            SCAM_22 ( __WEBMAIL_SCAM_LOGIN && __WEBMAIL_SCAM_CAIXA && ( __WE
 describe        SCAM_22 LOGIN / CAIXA / (CORREIO|MAIL|EMAIL) / (VALIDE/PROTEGER/PROTEJA) / CLIQUE / AQUI
 score           SCAM_22 9 9 9 9
 
+meta            SCAM_23 ( ( __WEBMAIL_SCAM_VERIFICAR || __WEBMAIL_SCAM_VERIFIQUE ) && __WEBMAIL_SCAM_CONTA && __WEBMAIL_SCAM_CLIQUE && __WEBMAIL_SCAM_AQUI && ( __WEBMAIL_SCAM_ENCERRADA || __WEBMAIL_SCAM_ENCERRADO || __WEBMAIL_SCAM_ENCERRAMENTO || __WEBMAIL_SCAM_ENCERRAR ) && __WEBMAIL_SCAM_ADMINISTRADOR )
+describe        SCAM_23 (VERIFICAR||VERIFIQUE) / CONTA / CLIQUE / AQUI / (ENCERRADA|ENCERRADO|ENCERRAMENTOENCERRAR) / ADMINISTRADOR
+score           SCAM_23 9 9 9 9
+
+meta            SCAM_24 ( __WEBMAIL_SCAM_CONTA && __WEBMAIL_SCAM_BLOQUEADA && __WEBMAIL_SCAM_ATIVA && __WEBMAIL_SCAM_CLIQUE && ( __WEBMAIL_SCAM_AQUI || __WEBMAIL_SCAM_LINK )  )
+describe        SCAM_24 CONTA / BLOQUEADA / ATIVA / CLIQUE  / (AQUI|LINK)
+score           SCAM_24 9 9 9 9
