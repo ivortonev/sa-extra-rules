@@ -1,4 +1,4 @@
-# VERSAO: 2021-02-08-13-13
+# VERSAO: 2021-03-01-12-36
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
@@ -29,9 +29,11 @@ body            __WEBMAIL_SCAM_ATUALIZANDO      /atualizando/i
 body            __WEBMAIL_SCAM_ATUALIZAR        /atualizar/i
 body            __WEBMAIL_SCAM_ATUALIZE         /atualize/i
 body            __WEBMAIL_SCAM_BANK             /bank/i
+body            __WEBMAIL_SCAM_BITCOIN          /bitcoin/i
 body            __WEBMAIL_SCAM_BLOQUEADA        /bloqueada/i
 body            __WEBMAIL_SCAM_BLOQUEADO        /bloqueado/i
 body            __WEBMAIL_SCAM_CAIXA            /caixa/i
+body            __WEBMAIL_SCAM_CARTEIRA         /carteira/i
 body            __WEBMAIL_SCAM_CHAIRMAN         /chairman/i
 body            __WEBMAIL_SCAM_CHARITY          /charity/i
 body            __WEBMAIL_SCAM_CLICANDO         /clicando/i
@@ -40,6 +42,7 @@ body            __WEBMAIL_SCAM_CLIQUE           /clique/i
 body            __WEBMAIL_SCAM_CONFIRME         /confirme/i
 body            __WEBMAIL_SCAM_CONTA            /conta/i
 body            __WEBMAIL_SCAM_CONTAS           /contas/i
+body            __WEBMAIL_SCAM_CONTATOS         /cotatos/i
 body            __WEBMAIL_SCAM_COTA             /cota/i
 body            __WEBMAIL_SCAM_CORREIO          /correio/i
 body            __WEBMAIL_SCAM_DELIVERED        /delivered/i
@@ -65,6 +68,7 @@ body            __WEBMAIL_SCAM_FUND             /fund/i
 body            __WEBMAIL_SCAM_GROUP            /group/i
 body            __WEBMAIL_SCAM_HELPDESK1        /help\ desk/i
 body            __WEBMAIL_SCAM_HELPDESK2        /helpdesk/i
+body            __WEBMAIL_SCAM_HORAS            /horas/i
 body            __WEBMAIL_SCAM_IMEDIATAMENTE    /imediatamente/i
 body            __WEBMAIL_SCAM_INATIVA          /inativa/i
 body            __WEBMAIL_SCAM_INATIVADA        /inativada/i
@@ -84,6 +88,8 @@ body            __WEBMAIL_SCAM_OBRIGADO         /obrigado/i
 body            __WEBMAIL_SCAM_OBRIGADOS        /obrigados/i
 body            __WEBMAIL_SCAM_PASSWORD         /password/i
 body            __WEBMAIL_SCAM_PHILANTHROPIST   /philanthropist/i
+body            __WEBMAIL_PORNO                 /porno/i
+body            __WEBMAIL_PORNOGRAFIA           /pornografia/i
 body            __WEBMAIL_SCAM_PROTEJA          /proteja/i
 body            __WEBMAIL_SCAM_PROTEGER         /proteger/i
 body            __WEBMAIL_SCAM_RECEBER          /receber/i
@@ -195,7 +201,7 @@ meta            SCAM_20 ( __WEBMAIL_SCAM_CONTA && __WEBMAIL_SCAM_LIMITE && ( __W
 describe        SCAM_20 CONTA / LIMITE / (COTA|ARMAZENAMENTO) / (EVITAR|ENVIAR|RECEBER) / (REVALIDAR/REVALIDE) / CLIQUE
 score           SCAM_20 9 9 9 9
 
-meta            SCAM_21 ( ( __WEBMAIL_SCAM_EMAIL || __WEBMAIL_SCAM_WEBMAIL ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CAIXA ) && ( __WEBMAIL_SCAM_CLIQUE || __WEBMAIL_SCAM_ACESSE ) &&  __WEBMAIL_SCAM_AQUI && ( __WEBMAIL_SCAM_ENCERRADA || __WEBMAIL_SCAM_ENCERRADO || __WEBMAIL_SCAM_BLOQUEADA || __WEBMAIL_SCAM_BLOQUEADO || __WEBMAIL_SCAM_INATIVADA || __WEBMAIL_SCAM_INATIVADO || __WEBMAIL_SCAM_SUSPENSA || __WEBMAIL_SCAM_SUSPENSO ) )
+meta            SCAM_21 ( ( k__WEBMAIL_SCAM_EMAIL || __WEBMAIL_SCAM_WEBMAIL ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CAIXA ) && ( __WEBMAIL_SCAM_CLIQUE || __WEBMAIL_SCAM_ACESSE ) &&  __WEBMAIL_SCAM_AQUI && ( __WEBMAIL_SCAM_ENCERRADA || __WEBMAIL_SCAM_ENCERRADO || __WEBMAIL_SCAM_BLOQUEADA || __WEBMAIL_SCAM_BLOQUEADO || __WEBMAIL_SCAM_INATIVADA || __WEBMAIL_SCAM_INATIVADO || __WEBMAIL_SCAM_SUSPENSA || __WEBMAIL_SCAM_SUSPENSO ) )
 describe        SCAM_21 (EMAIL|WEBMAIL)/(CONTA|CAIXA)/(CLIQUE|ACESSE)/AQUI/(ENCERRADA|ENCERRADO|BLOQUEADA|BLOQUEADO|INATIVADA|INATIVADO|SUSPENSA|SUSPENSO)
 score           SCAM_21 9 9 9 9
 
@@ -214,3 +220,7 @@ score           SCAM_24 9 9 9 9
 meta            SCAM_25 ( __WEBMAIL_SCAM_SENHA && __WEBMAIL_SCAM_EXPIRA && ( __WEBMAIL_SCAM_WEBMAIL || __WEBMAIL_SCAM_MAIL || __WEBMAIL_SCAM_CORREIO  ) && ( __WEBMAIL_SCAM_CLICK || __WEBMAIL_SCAM_CLIQUE ) && ( __WEBMAIL_SCAM_AQUI || __WEBMAIL_SCAM_LINK ) )
 describe        SCAM_25 SENHA / EXPIRA / (WEBMAIL|MAIL|CORREIO) / (CLIQUE|CLICK  / (AQUI|LINK)
 score           SCAM_25 9 9 9 9
+
+meta            SCAM_26 ( ( __WEBMAIL_PORNO || __WEBMAIL_PORNOGRAFIA ) && __WEBMAIL_SCAM_CONTATOS && __WEBMAIL_SCAM_BITCOIN && __WEBMAIL_SCAM_CARTEIRA && __WEBMAIL_SCAM_HORAS )
+describe        SCAM_26 (PORNO|PORNOGRAFIA) / CONTATOS / BITCOIN / CARTEIRA / HORAS
+score           SCAM_26 9 9 9 9
