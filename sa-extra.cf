@@ -1,17 +1,21 @@
-# VERSAO: 2021-03-01-12-49
+# VERSAO: 2021-03-01-12-52
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
-body            BLOG_WEEBLY     /weebly\.com/
-describe        BLOG_WEEBLY     WEEBLY Free blog site
-score           BLOG_WEEBLY     9 9 9 9
+body            BLOG_WEEBLY                     /weebly\.com/
+describe        BLOG_WEEBLY                     WEEBLY Free blog site
+score           BLOG_WEEBLY                     9 9 9 9
 
-body            BLOG_WIXSITE     /wixsite\.com/
-describe        BLOG_WIXSITE     WIXSITE Free blog site
-score           BLOG_WIXSITE     5 5 5 5
+body            BLOG_WIXSITE                    /wixsite\.com/
+describe        BLOG_WIXSITE                    WIXSITE Free blog site
+score           BLOG_WIXSITE                    9 9 9 9
 
-body            WEBHOSTAPP      /000webhostapp.com/
-describe        WEBHOSTAPP      WEBHOSTAPP Free blog site
-score           WEBHOSTAPP      9 9 9 9
+body            BLOG_DIGITALOCEAN               /digitaloceanspaces\.com/i
+describe        BLOG_DIGITALOCEAN               DIGITALOCEAN Free blog site
+score           BLOG_DIGITALOCEAN               9 9 9 9
+
+body            BLOG_WEBHOSTAPP                 /000webhostapp.com/i
+describe        BLOG_WEBHOSTAPP                 WEBHOSTAPP Free blog site
+score           BLOG_WEBHOSTAPP                 9 9 9 9
 
 
 body            __SHORTENER_VIRALURL1           /virl\.ws/i
