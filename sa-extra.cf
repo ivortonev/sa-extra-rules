@@ -1,9 +1,13 @@
-# VERSAO: 2021-03-01-12-36
+# VERSAO: 2021-03-02-11-27
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
 describe        BLOG_WEEBLY     WEEBLY Free blog site
 score           BLOG_WEEBLY     9 9 9 9
+
+body            BLOG_WIXSITE     /wixsite\.com/
+describe        BLOG_WIXSITE     WIXSITE Free blog site
+score           BLOG_WIXSITE     5 5 5 5
 
 body            WEBHOSTAPP      /000webhostapp.com/
 describe        WEBHOSTAPP      WEBHOSTAPP Free blog site
@@ -83,11 +87,13 @@ body            __WEBMAIL_SCAM_LOGIN            /login/i
 body            __WEBMAIL_SCAM_MAIL             /mail/i
 body            __WEBMAIL_SCAM_MAILBOX          /mailbox/i
 body            __WEBMAIL_SCAM_MESSAGE          /message/i
+body            __WEBMAIL_SCAM_MICROSOFT        /microsoft/i
 body            __WEBMAIL_SCAM_MISSPELLED       /misspelled/i
 body            __WEBMAIL_SCAM_OBRIGADO         /obrigado/i
 body            __WEBMAIL_SCAM_OBRIGADOS        /obrigados/i
 body            __WEBMAIL_SCAM_PASSWORD         /password/i
 body            __WEBMAIL_SCAM_PHILANTHROPIST   /philanthropist/i
+body            __WEBMAIL_SCAM_PARA             /para/i
 body            __WEBMAIL_PORNO                 /porno/i
 body            __WEBMAIL_PORNOGRAFIA           /pornografia/i
 body            __WEBMAIL_SCAM_PROTEJA          /proteja/i
@@ -113,6 +119,7 @@ body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
 body            __WEBMAIL_SCAM_TAMANHO          /tamanho/i
 body            __WEBMAIL_SCAM_ULTRAPASSOU      /ultrapassou/i
 body            __WEBMAIL_SCAM_VALIDE           /valide/i
+body            __WEBMAIL_SCAM_VERIFICADA       /verificada/i
 body            __WEBMAIL_SCAM_VERIFICAR        /verificar/i
 body            __WEBMAIL_SCAM_VERIFIQUE        /verifique/i
 body            __WEBMAIL_SCAM_WEBMAILADMIN1    /webmailadmin/i
@@ -224,3 +231,7 @@ score           SCAM_25 9 9 9 9
 meta            SCAM_26 ( ( __WEBMAIL_PORNO || __WEBMAIL_PORNOGRAFIA ) && __WEBMAIL_SCAM_CONTATOS && __WEBMAIL_SCAM_BITCOIN && __WEBMAIL_SCAM_CARTEIRA && __WEBMAIL_SCAM_HORAS )
 describe        SCAM_26 (PORNO|PORNOGRAFIA) / CONTATOS / BITCOIN / CARTEIRA / HORAS
 score           SCAM_26 9 9 9 9
+
+meta            SCAM_27 ( __WEBMAIL_MICROSOFT && __WEBMAIL_SCAM_CLIQUE && ( __WEBMAIL_SCAM_AQUI || __WEBMAIL_SCAM_PARA ) && ( __WEBMAIL_SCAM_VERIFICADA || __WEBMAIL_SCAM_VERIFICAR || __WEBMAIL_SCAM_VERIFIQUE ) )
+describe        SCAM_27 MICROSOFT / CLIQUE / (AQUI|PARA) / (VERIFICADA|VERIFICAR|VERIFIQUE)
+score           SCAM_27 2 2 2 2 
