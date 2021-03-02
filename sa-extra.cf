@@ -1,4 +1,4 @@
-# VERSAO: 2021-03-02-11-27
+# VERSAO: 2021-03-01-12-49
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY     /weebly\.com/
@@ -66,12 +66,15 @@ body            __WEBMAIL_SCAM_ENCERRAR         /encerrar/i
 body            __WEBMAIL_SCAM_EVITAR           /evitar/i
 body            __WEBMAIL_SCAM_ENVIAR           /enviar/i
 body            __WEBMAIL_SCAM_EXCEDEU          /excedeu/i
+body            __WEBMAIL_SCAM_EXCEED           /exceed/i
+body            __WEBMAIL_SCAM_EXCEEDED         /exceeded/i
 body            __WEBMAIL_SCAM_EXPIRA           /expira/i
 body            __WEBMAIL_SCAM_FOLLOWING        /following/i
 body            __WEBMAIL_SCAM_FUND             /fund/i
 body            __WEBMAIL_SCAM_GROUP            /group/i
 body            __WEBMAIL_SCAM_HELPDESK1        /help\ desk/i
 body            __WEBMAIL_SCAM_HELPDESK2        /helpdesk/i
+body            __WEBMAIL_SCAM_HERE             /here/i
 body            __WEBMAIL_SCAM_HORAS            /horas/i
 body            __WEBMAIL_SCAM_IMEDIATAMENTE    /imediatamente/i
 body            __WEBMAIL_SCAM_INATIVA          /inativa/i
@@ -84,6 +87,7 @@ body            __WEBMAIL_SCAM_LIMITE           /limite/i
 body            __WEBMAIL_SCAM_LIMIT            /limit/i
 body            __WEBMAIL_SCAM_LINK             /link/i
 body            __WEBMAIL_SCAM_LOGIN            /login/i
+body            __WEBMAIL_SCAM_LOSS             /loss/i
 body            __WEBMAIL_SCAM_MAIL             /mail/i
 body            __WEBMAIL_SCAM_MAILBOX          /mailbox/i
 body            __WEBMAIL_SCAM_MESSAGE          /message/i
@@ -98,6 +102,7 @@ body            __WEBMAIL_PORNO                 /porno/i
 body            __WEBMAIL_PORNOGRAFIA           /pornografia/i
 body            __WEBMAIL_SCAM_PROTEJA          /proteja/i
 body            __WEBMAIL_SCAM_PROTEGER         /proteger/i
+body            __WEBMAIL_SCAM_QUOTA            /quota/i
 body            __WEBMAIL_SCAM_RECEBER          /receber/i
 body            __WEBMAIL_SCAM_RECIPIENTS       /recipients/i
 body            __WEBMAIL_SCAM_RECONFIRME       /reconfirme/i
@@ -118,6 +123,7 @@ body            __WEBMAIL_SCAM_SUPORTEADMIN2    /suporte\ admin/i
 body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
 body            __WEBMAIL_SCAM_TAMANHO          /tamanho/i
 body            __WEBMAIL_SCAM_ULTRAPASSOU      /ultrapassou/i
+body            __WEBMAIL_SCAM_UPGRADE          /upgrade/i
 body            __WEBMAIL_SCAM_VALIDE           /valide/i
 body            __WEBMAIL_SCAM_VERIFICADA       /verificada/i
 body            __WEBMAIL_SCAM_VERIFICAR        /verificar/i
@@ -234,4 +240,8 @@ score           SCAM_26 9 9 9 9
 
 meta            SCAM_27 ( __WEBMAIL_MICROSOFT && __WEBMAIL_SCAM_CLIQUE && ( __WEBMAIL_SCAM_AQUI || __WEBMAIL_SCAM_PARA ) && ( __WEBMAIL_SCAM_VERIFICADA || __WEBMAIL_SCAM_VERIFICAR || __WEBMAIL_SCAM_VERIFIQUE ) )
 describe        SCAM_27 MICROSOFT / CLIQUE / (AQUI|PARA) / (VERIFICADA|VERIFICAR|VERIFIQUE)
-score           SCAM_27 2 2 2 2 
+score           SCAM_27 2 2 2 2
+
+meta            SCAM_28 ( __WEBMAIL_SCAM_QUOTA && ( __WEBMAIL_SCAM_EXCEED || __WEBMAIL_SCAM_EXCEEDED ) && __WEBMAIL_SCAM_LIMIT && __WEBMAIL_SCAM_UPGRADE && __WEBMAIL_SCAM_HERE && __WEBMAIL_SCAM_LOSS )
+describe        SCAM_28 QUOTA / (EXCEED|EXCEEDED) / LIMIT / UPGRADE / HERE / LOSS
+score           SCAM_28 9 9 9 9
