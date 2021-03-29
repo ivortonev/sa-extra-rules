@@ -1,4 +1,4 @@
-# VERSAO: 2021-03-01-12-52
+# VERSAO: 2021-03-29-15-45
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY                     /weebly\.com/
@@ -28,6 +28,7 @@ score           SHORTENER_VIRALURL              9 9 9 9
 body            __WEBMAIL_SCAM_ACESSE           /acesse/i
 body            __WEBMAIL_SCAM_ACESSO           /acesso/i
 body            __WEBMAIL_SCAM_ADMINISTRADOR    /administrador/i
+body            __WEBMAIL_SCAM_APAGUE           /apague/i
 body            __WEBMAIL_SCAM_AQUI             /aqui/i
 body            __WEBMAIL_SCAM_ARMAZENAMENTO    /armazenamento/i
 body            __WEBMAIL_SCAM_ATINGIU          /atingiu/i
@@ -72,6 +73,9 @@ body            __WEBMAIL_SCAM_ENVIAR           /enviar/i
 body            __WEBMAIL_SCAM_EXCEDEU          /excedeu/i
 body            __WEBMAIL_SCAM_EXCEED           /exceed/i
 body            __WEBMAIL_SCAM_EXCEEDED         /exceeded/i
+body            __WEBMAIL_SCAM_EXCLUA           /exclua/i
+body            __WEBMAIL_SCAM_EXCLUINDO        /excluindo/i
+body            __WEBMAIL_SCAM_EXCLUIR          /excluir/i
 body            __WEBMAIL_SCAM_EXPIRA           /expira/i
 body            __WEBMAIL_SCAM_FOLLOWING        /following/i
 body            __WEBMAIL_SCAM_FUND             /fund/i
@@ -111,6 +115,7 @@ body            __WEBMAIL_SCAM_RECEBER          /receber/i
 body            __WEBMAIL_SCAM_RECIPIENTS       /recipients/i
 body            __WEBMAIL_SCAM_RECONFIRME       /reconfirme/i
 body            __WEBMAIL_SCAM_RELIEF           /relief/i
+body            __WEBMAIL_SCAM_REMOVA           /remova/i
 body            __WEBMAIL_SCAM_REQUIRED         /required/i
 body            __WEBMAIL_SCAM_RETURNED         /returned/i
 body            __WEBMAIL_SCAM_REVALIDAR        /revalidar/i
@@ -249,3 +254,7 @@ score           SCAM_27 2 2 2 2
 meta            SCAM_28 ( __WEBMAIL_SCAM_QUOTA && ( __WEBMAIL_SCAM_EXCEED || __WEBMAIL_SCAM_EXCEEDED ) && __WEBMAIL_SCAM_LIMIT && __WEBMAIL_SCAM_UPGRADE && __WEBMAIL_SCAM_HERE && __WEBMAIL_SCAM_LOSS )
 describe        SCAM_28 QUOTA / (EXCEED|EXCEEDED) / LIMIT / UPGRADE / HERE / LOSS
 score           SCAM_28 9 9 9 9
+
+meta            SCAM_29 ( __WEBMAIL_SCAM_VERIFIQUE && ( __WEBMAIL_SCAM_EXCLUA || __WEBMAIL_SCAM_EXCLUIR || __WEBMAIL_SCAM_EXCLUINDO || __WEBMAIL_SCAM_REMOVA || __WEBMAIL_SCAM_APAGUE ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CONTAS ) && __WEBMAIL_SCAM_ARMAZENAMENTO && ( __WEBMAIL_SCAM_CONFIRME || __WEBMAIL_SCAM_CLICK || __WEBMAIL_SCAM_CLIQUE ) && ( __WEBMAIL_SCAM_AQUI || __WEBMAIL_SCAM_LINK ) )
+describe        SCAM_29 VERIFIQUE / (EXCLUA|EXCLUIR|EXCLUINDO|REMOVA|APAGUE) / (CONTA|CONTAS) / ARMAZENAMENTO / (CONFIRME|CLICK/CLIQUE) / (AQUI|LINK)
+score           SCAM_29 9 9 9 9
