@@ -1,4 +1,4 @@
-# VERSAO: 2021-03-29-15-45
+# VERSAO: 2021-11-16-11-23
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY                     /weebly\.com/
@@ -131,6 +131,8 @@ body            __WEBMAIL_SCAM_SUPORTEADMIN1    /suporteadmin/i
 body            __WEBMAIL_SCAM_SUPORTEADMIN2    /suporte\ admin/i
 body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
 body            __WEBMAIL_SCAM_TAMANHO          /tamanho/i
+body            __WEBMAIL_SCAM_TELA             /tela/i
+body            __WEBMAIL_SCAM_TROJAN           /trojan/i
 body            __WEBMAIL_SCAM_ULTRAPASSOU      /ultrapassou/i
 body            __WEBMAIL_SCAM_UPGRADE          /upgrade/i
 body            __WEBMAIL_SCAM_VALIDE           /valide/i
@@ -258,3 +260,7 @@ score           SCAM_28 9 9 9 9
 meta            SCAM_29 ( __WEBMAIL_SCAM_VERIFIQUE && ( __WEBMAIL_SCAM_EXCLUA || __WEBMAIL_SCAM_EXCLUIR || __WEBMAIL_SCAM_EXCLUINDO || __WEBMAIL_SCAM_REMOVA || __WEBMAIL_SCAM_APAGUE ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CONTAS ) && __WEBMAIL_SCAM_ARMAZENAMENTO && ( __WEBMAIL_SCAM_CONFIRME || __WEBMAIL_SCAM_CLICK || __WEBMAIL_SCAM_CLIQUE ) && ( __WEBMAIL_SCAM_AQUI || __WEBMAIL_SCAM_LINK ) )
 describe        SCAM_29 VERIFIQUE / (EXCLUA|EXCLUIR|EXCLUINDO|REMOVA|APAGUE) / (CONTA|CONTAS) / ARMAZENAMENTO / (CONFIRME|CLICK/CLIQUE) / (AQUI|LINK)
 score           SCAM_29 9 9 9 9
+
+meta            SCAM_30 ( __WEBMAIL_SCAM_SISTEMA && __WEBMAIL_SCAM_TROJAN && __WEBMAIL_SCAM_TELA && __WEBMAIL_SCAM_BITCOIN )
+describe        SCAM_30 SISTEMA / TROJAN / TELA / BITCOIN
+score           SCAM_30 9 9 9 9
