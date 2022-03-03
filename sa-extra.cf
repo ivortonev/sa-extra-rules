@@ -60,6 +60,7 @@ body            __WEBMAIL_SCAM_DESABILITAR      /desabilitar/i
 body            __WEBMAIL_SCAM_DESATIVADA       /desativada/i
 body            __WEBMAIL_SCAM_DESATIVAR        /desativar/i
 body            __WEBMAIL_SCAM_DEVIDO           /devido/i
+body            __WEBMAIL_SCAM_DIAS             /dias/i
 body            __WEBMAIL_SCAM_DIREITOS         /direitos/i
 body            __WEBMAIL_SCAM_DONATE           /donate/i
 body            __WEBMAIL_SCAM_DONATION         /donation/i
@@ -264,3 +265,7 @@ score           SCAM_29 9 9 9 9
 meta            SCAM_30 ( __WEBMAIL_SCAM_SISTEMA && __WEBMAIL_SCAM_TROJAN && __WEBMAIL_SCAM_TELA && __WEBMAIL_SCAM_BITCOIN )
 describe        SCAM_30 SISTEMA / TROJAN / TELA / BITCOIN
 score           SCAM_30 9 9 9 9
+
+meta            SCAM_31 ( __WEBMAIL_SCAM_SENHA && __WEBMAIL_SCAM_DIAS && __WEBMAIL_SCAM_ATUALIZAR && __WEBMAIL_SCAM_ENCERRADA && __WEBMAIL_SCAM_ADMINISTRADOR )
+describe        SCAM_31 SISTEMA / TROJAN / TELA / BITCOIN
+score           SCAM_31 9 9 9 9
