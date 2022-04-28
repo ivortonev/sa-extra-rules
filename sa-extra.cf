@@ -48,6 +48,7 @@ body            __WEBMAIL_SCAM_CHARITY          /charity/i
 body            __WEBMAIL_SCAM_CLICANDO         /clicando/i
 body            __WEBMAIL_SCAM_CLICK            /click/i
 body            __WEBMAIL_SCAM_CLIQUE           /clique/i
+body            __WEBMAIL_SCAM_CONFIRMAR        /confirmar/i
 body            __WEBMAIL_SCAM_CONFIRME         /confirme/i
 body            __WEBMAIL_SCAM_CONTA            /conta/i
 body            __WEBMAIL_SCAM_CONTAS           /contas/i
@@ -133,6 +134,7 @@ body            __WEBMAIL_SCAM_SUPORTEADMIN2    /suporte\ admin/i
 body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
 body            __WEBMAIL_SCAM_TAMANHO          /tamanho/i
 body            __WEBMAIL_SCAM_TELA             /tela/i
+body            __WEBMAIL_SCAM_TELEFONE         /telefone/i
 body            __WEBMAIL_SCAM_TROJAN           /trojan/i
 body            __WEBMAIL_SCAM_ULTRAPASSOU      /ultrapassou/i
 body            __WEBMAIL_SCAM_UPGRADE          /upgrade/i
@@ -269,3 +271,7 @@ score           SCAM_30 9 9 9 9
 meta            SCAM_31 ( __WEBMAIL_SCAM_SENHA && __WEBMAIL_SCAM_DIAS && __WEBMAIL_SCAM_ATUALIZAR && __WEBMAIL_SCAM_ENCERRADA && __WEBMAIL_SCAM_ADMINISTRADOR )
 describe        SCAM_31 SISTEMA / TROJAN / TELA / BITCOIN
 score           SCAM_31 9 9 9 9
+
+meta            SCAM_32 ( __WEBMAIL_SCAM_SENHA && __WEBMAIL_SCAM_CONFIRMAR && ( __WEBMAIL_SCAM_MAIL || __WEBMAIL_SCAM_WEBMAIL ) && ( __WEBMAIL_SCAM_SUSPENSA || __WEBMAIL_SCAM_SUSPENSO ) && __WEBMAIL_SCAM_TELEFONE )
+describe        SCAM_32 SENHA / CONFIRMAR / (MAIL|WEBMAIL) / (SUSPENSA|SUSPENSO) / TELEFONE 
+score           SCAM_32 9 9 9 9
