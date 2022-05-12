@@ -1,4 +1,4 @@
-# VERSAO: 2021-11-16-11-23
+# VERSAO: 2022-05-12-12-17
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY                     /weebly\.com/
@@ -43,6 +43,7 @@ body            __WEBMAIL_SCAM_BLOQUEADA        /bloqueada/i
 body            __WEBMAIL_SCAM_BLOQUEADO        /bloqueado/i
 body            __WEBMAIL_SCAM_CAIXA            /caixa/i
 body            __WEBMAIL_SCAM_CARTEIRA         /carteira/i
+body            __WEBMAIL_SCAM_CELULAR          /celular/i
 body            __WEBMAIL_SCAM_CHAIRMAN         /chairman/i
 body            __WEBMAIL_SCAM_CHARITY          /charity/i
 body            __WEBMAIL_SCAM_CLICANDO         /clicando/i
@@ -103,6 +104,7 @@ body            __WEBMAIL_SCAM_MAILBOX          /mailbox/i
 body            __WEBMAIL_SCAM_MESSAGE          /message/i
 body            __WEBMAIL_SCAM_MICROSOFT        /microsoft/i
 body            __WEBMAIL_SCAM_MISSPELLED       /misspelled/i
+body            __WEBMAIL_SCAM_NOME             /nome/i
 body            __WEBMAIL_SCAM_OBRIGADO         /obrigado/i
 body            __WEBMAIL_SCAM_OBRIGADOS        /obrigados/i
 body            __WEBMAIL_SCAM_PASSWORD         /password/i
@@ -275,3 +277,7 @@ score           SCAM_31 9 9 9 9
 meta            SCAM_32 ( __WEBMAIL_SCAM_SENHA && __WEBMAIL_SCAM_CONFIRMAR && ( __WEBMAIL_SCAM_MAIL || __WEBMAIL_SCAM_WEBMAIL ) && ( __WEBMAIL_SCAM_SUSPENSA || __WEBMAIL_SCAM_SUSPENSO ) && __WEBMAIL_SCAM_TELEFONE )
 describe        SCAM_32 SENHA / CONFIRMAR / (MAIL|WEBMAIL) / (SUSPENSA|SUSPENSO) / TELEFONE 
 score           SCAM_32 9 9 9 9
+
+meta            SCAM_33 ( __WEBMAIL_SCAM_ATUALIZAR && ( __WEBMAIL_SCAM_WEBMAIL || __WEBMAIL_SCAM_EMAIL || __WEBMAIL_SCAM_MAIL ) &&  __WEBMAIL_SCAM_NOME && __WEBMAIL_SCAM_SENHA &&  ( __WEBMAIL_SCAM_CELULAR || __WEBMAIL_SCAM_TELEFONE ) )
+describe        SCAM_33 ATUALIZAR / ( WEBMAIL|EMAIL|MAIL) / NOME / SENHA (CELULAR|TELEFONE)
+score           SCAM_33 9 9 9 9
