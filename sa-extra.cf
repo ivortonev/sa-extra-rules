@@ -1,4 +1,4 @@
-# VERSAO: 2022-05-12-12-17
+# VERSAO: 2022-06-02-10-27
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY                     /weebly\.com/
@@ -113,6 +113,7 @@ body            __WEBMAIL_SCAM_OBRIGADOS        /obrigados/i
 body            __WEBMAIL_SCAM_PASSWORD         /password/i
 body            __WEBMAIL_SCAM_PHILANTHROPIST   /philanthropist/i
 body            __WEBMAIL_SCAM_PARA             /para/i
+body            __WEBMAIL_SCAM_PERDER           /perder/i
 body            __WEBMAIL_PORNO                 /porno/i
 body            __WEBMAIL_PORNOGRAFIA           /pornografia/i
 body            __WEBMAIL_SCAM_PROTEJA          /proteja/i
@@ -289,4 +290,6 @@ meta            SCAM_34 ( ( __WEBMAIL_SCAM_EMAIL || __WEBMAIL_SCAM_MAIL || __WEB
 describe        SCAM_34 ( EMAIL|MAIL|MAILBOX|CORREIO ) / LIMITE / ( ARMAZENAMENTO|CAPACIDADE ) / ( CLIQUE|CLICK|CLICAR|CONFIRMAR|CONFIRME ) / ( LOGIN|LOGUE )
 score           SCAM_34 9 9 9 9
 
-
+meta            SCAM_35 ( ( __WEBMAIL_SCAM_ATUALIZAR || __WEBMAIL_SCAM_ATUALIZE ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CONTAS ) && ( __WEBMAIL_SCAM_PERDER || __WEBMAIL_SCAM_BLOQUEADA || __WEBMAIL_SCAM_BLOQUEADO ) && ( __WEBMAIL_SCAM_CLICK || __WEBMAIL_SCAM_CLIQUE || __WEBMAIL_SCAM_CLICAR || __WEBMAIL_SCAM_CONFIRMAR || __WEBMAIL_SCAM_CONFIRME ) && ( __WEBMAIL_SCAM_AQUI || __WEBMAIL_SCAM_LINK ) )
+describe        SCAM_35 ( ATUALIZAR|ATUALIZE ) / (CONTA/CONTAS) / ( PERDER|BLOQUEADA|BLOQUEADO ) / ( CLIQUE|CLICK|CLICAR|CONFIRMAR|CONFIRME ) / ( AQUI|LINK )
+score           SCAM_35 9 9 9 9
