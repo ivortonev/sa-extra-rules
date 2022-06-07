@@ -1,4 +1,4 @@
-# VERSAO: 2022-06-02-10-27
+# VERSAO: 2022-06-07-13-10
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY                     /weebly\.com/
@@ -40,7 +40,9 @@ body            __WEBMAIL_SCAM_ATUALIZE         /atualize/i
 body            __WEBMAIL_SCAM_BANK             /bank/i
 body            __WEBMAIL_SCAM_BITCOIN          /bitcoin/i
 body            __WEBMAIL_SCAM_BLOQUEADA        /bloqueada/i
+body            __WEBMAIL_SCAM_BLOQUEADAS       /bloqueadas/i
 body            __WEBMAIL_SCAM_BLOQUEADO        /bloqueado/i
+body            __WEBMAIL_SCAM_BLOQUEADOS       /bloqueados/i
 body            __WEBMAIL_SCAM_CAIXA            /caixa/i
 body            __WEBMAIL_SCAM_CAPACIDADE       /capacidade/i
 body            __WEBMAIL_SCAM_CARTEIRA         /carteira/i
@@ -62,6 +64,8 @@ body            __WEBMAIL_SCAM_DELIVERED        /delivered/i
 body            __WEBMAIL_SCAM_DENIED           /denied/i
 body            __WEBMAIL_SCAM_DESABILITAR      /desabilitar/i
 body            __WEBMAIL_SCAM_DESATIVADA       /desativada/i
+body            __WEBMAIL_SCAM_DESATIVADO       /desativado/i
+body            __WEBMAIL_SCAM_DESATIVANDO      /desativando/i
 body            __WEBMAIL_SCAM_DESATIVAR        /desativar/i
 body            __WEBMAIL_SCAM_DEVIDO           /devido/i
 body            __WEBMAIL_SCAM_DIAS             /dias/i
@@ -79,6 +83,7 @@ body            __WEBMAIL_SCAM_EXCEDEU          /excedeu/i
 body            __WEBMAIL_SCAM_EXCEED           /exceed/i
 body            __WEBMAIL_SCAM_EXCEEDED         /exceeded/i
 body            __WEBMAIL_SCAM_EXCLUA           /exclua/i
+body            __WEBMAIL_SCAM_EXCLUIDO         /excluido/i
 body            __WEBMAIL_SCAM_EXCLUINDO        /excluindo/i
 body            __WEBMAIL_SCAM_EXCLUIR          /excluir/i
 body            __WEBMAIL_SCAM_EXPIRA           /expira/i
@@ -124,7 +129,10 @@ body            __WEBMAIL_SCAM_RECIPIENTS       /recipients/i
 body            __WEBMAIL_SCAM_RECONFIRME       /reconfirme/i
 body            __WEBMAIL_SCAM_RELIEF           /relief/i
 body            __WEBMAIL_SCAM_REMOVA           /remova/i
+body            __WEBMAIL_SCAM_REMOVENDO        /removendo/i
+body            __WEBMAIL_SCAM_REMOVIDO         /removido/i
 body            __WEBMAIL_SCAM_REQUIRED         /required/i
+body            __WEBMAIL_SCAM_RESPONDA         /responda/i
 body            __WEBMAIL_SCAM_RETURNED         /returned/i
 body            __WEBMAIL_SCAM_REVALIDAR        /revalidar/i
 body            __WEBMAIL_SCAM_REVALIDE         /revalide/i
@@ -144,6 +152,7 @@ body            __WEBMAIL_SCAM_TELEFONE         /telefone/i
 body            __WEBMAIL_SCAM_TROJAN           /trojan/i
 body            __WEBMAIL_SCAM_ULTRAPASSOU      /ultrapassou/i
 body            __WEBMAIL_SCAM_UPGRADE          /upgrade/i
+body            __WEBMAIL_SCAM_VALIDAR          /validar/i
 body            __WEBMAIL_SCAM_VALIDE           /valide/i
 body            __WEBMAIL_SCAM_VERIFICADA       /verificada/i
 body            __WEBMAIL_SCAM_VERIFICAR        /verificar/i
@@ -293,3 +302,7 @@ score           SCAM_34 9 9 9 9
 meta            SCAM_35 ( ( __WEBMAIL_SCAM_ATUALIZAR || __WEBMAIL_SCAM_ATUALIZE ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CONTAS ) && ( __WEBMAIL_SCAM_PERDER || __WEBMAIL_SCAM_BLOQUEADA || __WEBMAIL_SCAM_BLOQUEADO ) && ( __WEBMAIL_SCAM_CLICK || __WEBMAIL_SCAM_CLIQUE || __WEBMAIL_SCAM_CLICAR || __WEBMAIL_SCAM_CONFIRMAR || __WEBMAIL_SCAM_CONFIRME ) && ( __WEBMAIL_SCAM_AQUI || __WEBMAIL_SCAM_LINK ) )
 describe        SCAM_35 ( ATUALIZAR|ATUALIZE ) / (CONTA/CONTAS) / ( PERDER|BLOQUEADA|BLOQUEADO ) / ( CLIQUE|CLICK|CLICAR|CONFIRMAR|CONFIRME ) / ( AQUI|LINK )
 score           SCAM_35 9 9 9 9
+
+meta            SCAM_36 ( __WEBMAIL_SCAM_WEBMAIL && ( __WEBMAIL_SCAM_EXCLUIDO || __WEBMAIL_SCAM_EXCLUINDO || __WEBMAIL_SCAM_DESATIVANDO || __WEBMAIL_SCAM_REMOVENDO ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CONTAS ) && __WEBMAIL_SCAM_SENHA ( __WEBMAIL_SCAM_RESPONDA || __WEBMAIL_SCAM_CLICANDO || __WEBMAIL_SCAM_CLICAR || __WEBMAIL_SCAM_CLICK || __WEBMAIL_SCAM_CLIQUE || __WEBMAIL_SCAM_ACESSE ) &&  ( __WEBMAIL_SCAM_AQUI || __WEBMAIL_SCAM_LINK ) )
+describe        SCAM_36 WEBMAIL / (EXCLUIDO|EXCLUINDO|DESATIVADO|DESATIVANDO|REMOVIDO|REMOVENDO) / (CONTA|CONTAS) / SENHA / (RESPONDA|CLICANDO|CLICAR|CLICK|CLIQUE|ACESSE) / (AQUI|LINK)
+score           SCAM_36 9 9 9 9
