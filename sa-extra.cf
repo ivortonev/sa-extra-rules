@@ -1,4 +1,4 @@
-# VERSAO: 2022-06-24-14-34
+# VERSAO: 2022-07-11-11-03
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY                     /weebly\.com/
@@ -27,6 +27,8 @@ score           SHORTENER_VIRALURL              9 9 9 9
 
 body            __WEBMAIL_SCAM_ABRA             /abra/i
 body            __WEBMAIL_SCAM_ABRINDO          /abrindo/i
+body            __WEBMAIL_SCAM_ACESSAR          /acessar/i
+body            __WEBMAIL_SCAM_ACESSANDO        /acessando/i
 body            __WEBMAIL_SCAM_ACESSE           /acesse/i
 body            __WEBMAIL_SCAM_ACESSO           /acesso/i
 body            __WEBMAIL_SCAM_ADMINISTRADOR    /administrador/i
@@ -72,6 +74,7 @@ body            __WEBMAIL_SCAM_DESATIVADA       /desativada/i
 body            __WEBMAIL_SCAM_DESATIVADO       /desativado/i
 body            __WEBMAIL_SCAM_DESATIVANDO      /desativando/i
 body            __WEBMAIL_SCAM_DESATIVAR        /desativar/i
+body            __WEBMAIL_SCAM_DEVEM            /devem/i
 body            __WEBMAIL_SCAM_DEVIDO           /devido/i
 body            __WEBMAIL_SCAM_DIAS             /dias/i
 body            __WEBMAIL_SCAM_DIREITOS         /direitos/i
@@ -83,6 +86,7 @@ body            __WEBMAIL_SCAM_ENCERRADO        /encerrado/i
 body            __WEBMAIL_SCAM_ENCERRAMENTO     /encerramento/i
 body            __WEBMAIL_SCAM_ENCERRAR         /encerrar/i
 body            __WEBMAIL_SCAM_EVITAR           /evitar/i
+body            __WEBMAIL_SCAM_ENTRAR           /entrar/i
 body            __WEBMAIL_SCAM_ENTRANDO         /entrando/i
 body            __WEBMAIL_SCAM_ENTRE            /entre/i
 body            __WEBMAIL_SCAM_ENVIAR           /enviar/i
@@ -128,6 +132,7 @@ body            __WEBMAIL_SCAM_PARA             /para/i
 body            __WEBMAIL_SCAM_PERDER           /perder/i
 body            __WEBMAIL_PORNO                 /porno/i
 body            __WEBMAIL_PORNOGRAFIA           /pornografia/i
+body            __WEBMAIL_SCAM_PRECISAM         /precisam/i
 body            __WEBMAIL_SCAM_PROTEJA          /proteja/i
 body            __WEBMAIL_SCAM_PROTEGER         /proteger/i
 body            __WEBMAIL_SCAM_QUOTA            /quota/i
@@ -328,3 +333,7 @@ score           SCAM_38 9 9 9 9
 meta            SCAM_39 ( ( __WEBMAIL_SCAM_COMPROMETIDA || __WEBMAIL_SCAM_COMPROMETIDO ) && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CONTAS || __WEBMAIL_SCAM_CAIXA || __WEBMAIL_SCAM_CAIXAS ) && ( __WEBMAIL_SCAM_BLOQUEADA || __WEBMAIL_SCAM_BLOQUEADAS || __WEBMAIL_SCAM_BLOQUEADO || __WEBMAIL_SCAM_BLOQUEADOS ) && ( __WEBMAIL_SCAM_ACESSE || __WEBMAIL_SCAM_ACESSO ) && ( __WEBMAIL_SCAM_CLICANDO || __WEBMAIL_SCAM_CLICAR || __WEBMAIL_SCAM_CLIQUE ) )
 describe        SCAM_39 (COMPROMETIDA/COMPROMETIDO) / (CONTA|CONTAS|CAIXA|CAIXAS) / (BLOQUEADA|BLOQUEADAS|BLOQUEADO|BLOQUEADOS) / (ACESSE|ACESSO) / (CLICANDO|CLICAR|CLIQUE)
 score           SCAM_39 9 9 9 9
+
+meta            SCAM_40 ( __WEBMAIL_SCAM_WEBMAIL && ( __WEBMAIL_SCAM_DEVEM || __WEBMAIL_SCAM_PRECISAM ) && ( __WEBMAIL_SCAM_ACESSAR || __WEBMAIL_SCAM_ACESSANDO || __WEBMAIL_SCAM_CLICAR || __WEBMAIL_SCAM_CLICANDO || __WEBMAIL_SCAM_ENTRAR || __WEBMAIL_SCAM_ENTRANDO ) && ( __WEBMAIL_SCAM_LINK || __WEBMAIL_SCAM_AQUI ) && ( __WEBMAIL_SCAM_ADMINISTRADOR || __WEBMAIL_SCAM_SUPORTE || __WEBMAIL_SCAM_SUPORTEADMIN1 ) )
+describe        SCAM_40 WEBMAIL / (DEVEM/PRECISAM) / (ACESSAR/ACESSANDO/CLICAR/CLICANDO/ENTRAR/ENTRANDO) / (LINK/AQUI) / (ADMINISTRADOR/SUPORTE/SUPORTEADMIN1)
+score           SCAM_40 9 9 9 9
