@@ -1,4 +1,4 @@
-# VERSAO: 2022-07-11-11-03
+# VERSAO: 2022-07-28-18-30
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY                     /weebly\.com/
@@ -155,7 +155,7 @@ body            __WEBMAIL_SCAM_SELECTED         /selected/i
 body            __WEBMAIL_SCAM_SENHA            /senha/i
 body            __WEBMAIL_SCAM_SISTEMA          /sistema/i
 body            __WEBMAIL_SCAM_STORAGE          /storage/i
-body            __WEBMAIL_SCAM_SUA              /sua/i
+body            __WEBMAIL_SCAM_SUA              /sua\ /i
 body            __WEBMAIL_SCAM_SUSPENSA         /suspensa/i
 body            __WEBMAIL_SCAM_SUSPENSO         /suspenso/i
 body            __WEBMAIL_SCAM_SUPORTEADMIN1    /suporteadmin/i
