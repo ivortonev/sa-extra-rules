@@ -1,4 +1,4 @@
-# VERSAO: 2022-09-21-15-30
+# VERSAO: 2022-09-30-12-43
 # Autor: Ivo R. Tonev ivo@tonev.pro.br
 
 body            BLOG_WEEBLY                     /weebly\.com/
@@ -71,11 +71,12 @@ body            __WEBMAIL_SCAM_DELIVERED        /delivered/i
 body            __WEBMAIL_SCAM_DENIED           /denied/i
 body            __WEBMAIL_SCAM_DESABILITAR      /desabilitar/i
 body            __WEBMAIL_SCAM_DESATIVADA       /desativada/i
-body            __WEBMAIL_SCAM_DESATIVADAS       /desativadas/i
+body            __WEBMAIL_SCAM_DESATIVADAS      /desativadas/i
 body            __WEBMAIL_SCAM_DESATIVADO       /desativado/i
-body            __WEBMAIL_SCAM_DESATIVADOS       /desativados/i
+body            __WEBMAIL_SCAM_DESATIVADOS      /desativados/i
 body            __WEBMAIL_SCAM_DESATIVANDO      /desativando/i
 body            __WEBMAIL_SCAM_DESATIVAR        /desativar/i
+body            __WEBMAIL_SCAM_DEVE             /deve/i
 body            __WEBMAIL_SCAM_DEVEM            /devem/i
 body            __WEBMAIL_SCAM_DEVIDO           /devido/i
 body            __WEBMAIL_SCAM_DIAS             /dias/i
@@ -99,6 +100,7 @@ body            __WEBMAIL_SCAM_EXCLUA           /exclua/i
 body            __WEBMAIL_SCAM_EXCLUIDO         /excluido/i
 body            __WEBMAIL_SCAM_EXCLUINDO        /excluindo/i
 body            __WEBMAIL_SCAM_EXCLUIR          /excluir/i
+body            __WEBMAIL_SCAM_EXECUTAR         /executar/i
 body            __WEBMAIL_SCAM_EXPIRA           /expira/i
 body            __WEBMAIL_SCAM_FOLLOWING        /following/i
 body            __WEBMAIL_SCAM_FUND             /fund/i
@@ -110,9 +112,14 @@ body            __WEBMAIL_SCAM_HORAS            /horas/i
 body            __WEBMAIL_SCAM_IMEDIATAMENTE    /imediatamente/i
 body            __WEBMAIL_SCAM_INATIVA          /inativa/i
 body            __WEBMAIL_SCAM_INATIVADA        /inativada/i
+body            __WEBMAIL_SCAM_INATIVADAS       /inativadas/i
 body            __WEBMAIL_SCAM_INATIVADO        /inativado/i
+body            __WEBMAIL_SCAM_INATIVADOS       /inativados/i
 body            __WEBMAIL_SCAM_INATIVAS         /inativas/i
+body            __WEBMAIL_SCAM_INATIVO          /inativo/i
+body            __WEBMAIL_SCAM_INATIVOS         /inativos/i
 body            __WEBMAIL_SCAM_INFORM           /inform/i
+body            __WEBMAIL_SCAM_INICIAR          /iniciar/i
 body            __WEBMAIL_SCAM_INTERESTED       /interested/i
 body            __WEBMAIL_SCAM_LIMITE           /limite/i
 body            __WEBMAIL_SCAM_LIMIT            /limit/i
@@ -129,10 +136,13 @@ body            __WEBMAIL_SCAM_MISSPELLED       /misspelled/i
 body            __WEBMAIL_SCAM_NOME             /nome/i
 body            __WEBMAIL_SCAM_OBRIGADO         /obrigado/i
 body            __WEBMAIL_SCAM_OBRIGADOS        /obrigados/i
+body            __WEBMAIL_SCAM_OUTLOOK          /outlook/i
+body            __WEBMAIL_SCAM_OWA              /owa/i
 body            __WEBMAIL_SCAM_PASSWORD         /password/i
 body            __WEBMAIL_SCAM_PHILANTHROPIST   /philanthropist/i
 body            __WEBMAIL_SCAM_PARA             /para/i
 body            __WEBMAIL_SCAM_PERDER           /perder/i
+body            __WEBMAIL_SCAM_PORTAL           /portal/i
 body            __WEBMAIL_POLITICA              /politica/i
 body            __WEBMAIL_POLITICAS             /politicas/i
 body            __WEBMAIL_PORNO                 /porno/i
@@ -145,7 +155,7 @@ body            __WEBMAIL_SCAM_RECEBER          /receber/i
 body            __WEBMAIL_SCAM_RECIPIENTS       /recipients/i
 body            __WEBMAIL_SCAM_RECONFIRME       /reconfirme/i
 body            __WEBMAIL_SCAM_REGRA            /regra/i
-body            __WEBMAIL_SCAM_REGRAS            /regras/i
+body            __WEBMAIL_SCAM_REGRAS           /regras/i
 body            __WEBMAIL_SCAM_RELIEF           /relief/i
 body            __WEBMAIL_SCAM_REMOVA           /remova/i
 body            __WEBMAIL_SCAM_REMOVENDO        /removendo/i
@@ -171,6 +181,8 @@ body            __WEBMAIL_SCAM_SUPORTE          /suporte/i
 body            __WEBMAIL_SCAM_TAMANHO          /tamanho/i
 body            __WEBMAIL_SCAM_TELA             /tela/i
 body            __WEBMAIL_SCAM_TELEFONE         /telefone/i
+body            __WEBMAIL_SCAM_TODAS            /todas/i
+body            __WEBMAIL_SCAM_TODOS            /todos/i
 body            __WEBMAIL_SCAM_TROJAN           /trojan/i
 body            __WEBMAIL_SCAM_ULTRAPASSOU      /ultrapassou/i
 body            __WEBMAIL_SCAM_UPGRADE          /upgrade/i
@@ -348,4 +360,8 @@ score           SCAM_40 9 9 9 9
 meta            SCAM_41 ( __WEBMAIL_SCAM_WEBMAIL && ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CONTAS || __WEBMAIL_SCAM_CAIXA || __WEBMAIL_SCAM_CAIXAS ) && ( __WEBMAIL_SCAM_CORREIO || __WEBMAIL_SCAM_EMAIL || __WEBMAIL_SCAM_MAIL || __WEBMAIL_SCAM_MAILBOX || __WEBMAIL_SCAM_MENSAGEM ) && ( __WEBMAIL_SCAM_SUSPENSA || __WEBMAIL_SCAM_SUSPENSO || __WEBMAIL_SCAM_BLOQUEADA || __WEBMAIL_SCAM_BLOQUEADAS || __WEBMAIL_SCAM_BLOQUEADO || __WEBMAIL_SCAM_BLOQUEADO || __WEBMAIL_SCAM_DESATIVADA || __WEBMAIL_SCAM_DESATIVADAS || __WEBMAIL_SCAM_DESATIVADO || __WEBMAIL_SCAM_DESATIVADOS || __WEBMAIL_SCAM_INATIVADA || __WEBMAIL_SCAM_INATIVADAS )  && ( __WEBMAIL_SCAM_REGRA || __WEBMAIL_SCAM_REGRAS || __WEBMAIL_POLITICA || __WEBMAIL_POLITICAS ) && __WEBMAIL_SCAM_LINK )
 describe        SCAM_41 WEBMAIL / (CONTA/CONTAS/CAIXA/CAIXAS) / (CORREIO/EMAIL/MAIL/MAILBOX/MENSAGEM) / (SUSPENSA/SUSPENSAS/BLOQUEADA/BLOQUEADAS/BLOQUEADO/BLOQUEADOS/DESATIVADA/DESATIVADAS/DESATIVADO/DESATIVADOS/INATIVADA/INATIVADAS) / (REGRA/REGRAS/POLITICA/POLITICAS) / LINK
 score           SCAM_41 9 9 9 9
+
+meta            SCAM_42 ( ( __WEBMAIL_SCAM_CONTA || __WEBMAIL_SCAM_CONTAS || __WEBMAIL_SCAM_CAIXA || __WEBMAIL_SCAM_CAIXAS ) && ( __WEBMAIL_SCAM_OUTLOOK || __WEBMAIL_SCAM_OWA || __WEBMAIL_SCAM_CORREIO || __WEBMAIL_SCAM_MAIL || __WEBMAIL_SCAM_MAILBOX || __WEBMAIL_SCAM_EMAIL ) && ( __WEBMAIL_SCAM_INICIAR || __WEBMAIL_SCAM_EXECUTAR || __WEBMAIL_SCAM_ACESSAR || __WEBMAIL_SCAM_ACESSANDO || __WEBMAIL_SCAM_ACESSE || __WEBMAIL_SCAM_ACESSO || __WEBMAIL_SCAM_CLICANDO || __WEBMAIL_SCAM_CLICAR || __WEBMAIL_SCAM_CLICK || __WEBMAIL_SCAM_CLIQUE ) && ( __WEBMAIL_SCAM_DEVE || __WEBMAIL_SCAM_DEVEM ) && ( __WEBMAIL_SCAM_PORTAL || __WEBMAIL_SCAM_LINK || __WEBMAIL_SCAM_ABRA || __WEBMAIL_SCAM_ABRINDO || __WEBMAIL_SCAM_AQUI ) && ( __WEBMAIL_SCAM_TODAS || __WEBMAIL_SCAM_TODOS ) && ( __WEBMAIL_SCAM_INATIVA || __WEBMAIL_SCAM_INATIVAS || __WEBMAIL_SCAM_INATIVADO || __WEBMAIL_SCAM_INATIVADOS || __WEBMAIL_SCAM_INATIVADA || __WEBMAIL_SCAM_INATIVADAS || __WEBMAIL_SCAM_INATIVO || __WEBMAIL_SCAM_INATIVOS ) )
+describe        SCAM_42 (CONTA/CONTAS/CAIXA/CAIXAS) / (OUTLOOK/OWA/CORREIO/MAIL/MAILBOX/EMAIL) / (INICIAR/EXECUTAR/ACESSAR/ACESSANDO/ACESSE/ACESSO/CLICANDO/CLICAR/CLICK/CLIQUE) / (PORTAL/LINK/ABRA/ABRINDO/AQUI) / (TODAS/TODOS) / (INATIVA/INATIVAS/INATIVADO/INATIVADOS/INATIVADA/INATIVADAS/INATIVO/INATIVOS)
+score           SCAM_42 9 9 9 9
 
